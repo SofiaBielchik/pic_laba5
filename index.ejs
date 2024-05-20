@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/style.css">
+    <title>Jokes</title>
+</head>
+<body>
+    <div class="table-container">
+        <h1>Jokes</h1>
+        <table style="font-family: 'Times New Roman', serif;font-size:24px;border: 1px solid black;">
+            <tr>
+                <th>Joke</th>
+            </tr>
+            <% for (let i = 0; i < jokes.length; i++) { %>
+                <tr>
+                    <td><%= jokes[i].joke %></td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <title>Jokes</title>
+    <title>Personal Info</title>
 </head>
 <body>
-    <div class="table-container">
-        <h1>Jokes</h1>
-        <table style="font-family: 'Times New Roman', serif;font-size:24px;border: 1px solid black;">
-            <tr>
-                <th>Joke</th>
-            </tr>
-            <% for (let i = 0; i < jokes.length; i++) { %>
-                <tr>
-                    <td><%= jokes[i].joke %></td>
-                </tr>
-            <% } %>
-        </table>
+    <div class="container">
+        <h1>Personal Information</h1>
+        <div class="user-info">
+            <p><strong>Login:</strong> <%= user.login %></p>
+            <p><strong>Surname:</strong> <%= user.surname %></p>
+            <p><strong>Name:</strong> <%= user.name %></p>
+            <p><strong>Course:</strong> <%= user.course %></p>
+            <p><strong>Group:</strong> <%= user.group %></p>            
+        </div>
     </div>
 </body>
 </html>
+

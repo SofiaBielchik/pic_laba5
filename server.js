@@ -35,7 +35,6 @@ app.get('/personal-info', (req, res) => {
         res.status(404).json({ error: 'Невірний логін' });
     }
 });
-
 // Запуск сервера
 app.listen(port, () => {
     console.log(`Server is running at http://localhost:${port}`);
